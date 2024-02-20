@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=code_drops_crud
+      - POSTGRES_USER=admin
+    ports:
+      - "5433:5432"
